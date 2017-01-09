@@ -11,9 +11,9 @@ You can use `make clean; make;` to generate `my_word2vec`. Then, to incorporate 
 
 For the first usage, you need to add a parameter `-ontology <ontology-file-name>`. For example, it could be:
 
-  ./my_word2vec -train corpus.txt -output vec.txt -size 50 -window 5 -sample 1e-4 -negative 0 -hs 1 -binary 0 -cbow 1 -iter 3 -ontology ../data/xin1991_level1.txt
+    ./my_word2vec -train corpus.txt -output vec.txt -size 50 -window 5 -sample 1e-4 -negative 0 -hs 1 -binary 0 -cbow 1 -iter 3 -ontology ../data/xin1991_level1.txt
 
 
 For the second usage, you need to specify `-sim <similarity_matrix_file_name> -wordlist <word_list_file_name>`. Say, it might be:
 
-  ./my_word2vec -train corpus.txt -output vec.txt -size 50 -window 5 -sample 1e-5 -negative 0 -hs 1 -binary 0 -cbow 0 -iter 2 -threads 3 -sim sim_mat.txt -wordlist ../data/wordlist-utf8.txt
+    ./my_word2vec -train corpus.txt -output vec.txt -size 50 -window 5 -sample 1e-5 -negative 0 -hs 1 -binary 0 -cbow 0 -iter 2 -threads 3 -sim sim_mat.txt -wordlist ../data/wordlist-utf8.txt
